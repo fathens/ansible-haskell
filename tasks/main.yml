@@ -35,6 +35,7 @@
       become: yes
       become_user: root
       unarchive:
+        remote_src: yes
         src: /tmp/{{haskell_stack_tgz}}
         dest: '{{haskell_stack_parent_install_dir}}'
         creates: '{{haskell_stack_install_dir}}'

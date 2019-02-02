@@ -67,8 +67,6 @@
     mode: '{{item.m|default("0644")}}'
 
 - name: setup...
-  become: yes
-  become_user: root
   command: '{{haskell_stack_link_dir}}/stack setup --resolver {{haskell_stack_resolver}}'
   args:
     creates: '{{ansible_env.HOME}}/.stack'

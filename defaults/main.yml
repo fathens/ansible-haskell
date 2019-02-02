@@ -23,3 +23,4 @@ haskell_stack_checksums:
     linux-x86_64: sha256:e2363728e5818ccc68db9371c15af892a9a1fc86d808d0a9a77257f13696e946
 
 haskell_stack_parent_install_dir: /usr/local
+haskell_stack_resolver: lts-13.5
